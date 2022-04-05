@@ -1,0 +1,14 @@
+<script>
+     var mobil = {
+         merk : "toyota avanza",
+         tipe : "MVP",
+         harga : 200000000,
+         warna : "merah",
+         pergi : function (tempat) {
+             return "pergi ke" + tempat;
+         }
+     };
+     console.log( mobil.pergi("medan"));
+     mobil.pergi = "methodnya sudah tertimpa..";
+     console.log(mobil.pergi("medan"));
+</script>
